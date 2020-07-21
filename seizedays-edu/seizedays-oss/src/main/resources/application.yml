@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+aliyun:
+  oss:
+    file:
+      endpoint: "oss-cn-beijing.aliyuncs.com"
+      key-id: 您的阿里云keyid
+      key-secret: 您的阿里云keySercret
+      bucket-name: 您的bucketName
+      file-host: 您的fileHost

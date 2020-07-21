@@ -1,0 +1,21 @@
+server:
+  port: 8120
+
+spring:
+  application:
+    name: seizedays-sysuser
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos注册中心地址
+      config:
+        server-addr: localhost:8848 #nacos作为配置中心的地址
+        file-extension: yaml #指定yaml格式的配置
+        group: EDU_GROUP
+        namespace: DEV_001 #命名空间的ID
+
+  # ${prefix}-${spring.profile.active}.${file-extension}
+# prefix 为 spring.application的值 spring.profile.active为 当前环境对应的profile
+  #file-extension是数据格式 只支持 properties 和 yaml类型
+
+# semall-user-service-dev.yaml

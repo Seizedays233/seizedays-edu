@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 1024MB #最大上传文件大小 默认1M
+      max-request-size: 1024MB  # 最大总上传数据大小 默认10M
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#阿里云vod
+aliyun:
+  vod:
+    file:
+      key-id: 您的阿里云keyid
+      key-secret: 您的阿里云keySercret
+
+
+

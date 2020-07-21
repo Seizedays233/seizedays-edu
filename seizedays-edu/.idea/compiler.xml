@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="seizeedu-common" />
+        <module name="seizedays-microservice-user" />
+        <module name="seizedays-microservice-vod" />
+        <module name="seizedays-microservice-edu" />
+        <module name="seizedays-oss" />
+        <module name="seizedays-microservice-sysuser" />
+        <module name="seizedays-microservice-statistic" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="seizedays-edu-parent" options="-parameters" />
+      <module name="seizedays-microservice-edu" options="-parameters" />
+      <module name="seizedays-microservice-statistic" options="-parameters" />
+      <module name="seizedays-microservice-sysuser" options="-parameters" />
+      <module name="seizedays-microservice-user" options="-parameters" />
+      <module name="seizedays-microservice-vod" options="-parameters" />
+      <module name="seizedays-oss" options="-parameters" />
+      <module name="seizeedu-common" options="-parameters" />
+    </option>
+  </component>
+</project>
